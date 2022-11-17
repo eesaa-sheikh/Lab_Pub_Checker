@@ -78,15 +78,15 @@ public class GuestTest {
     }
 
         @Test
-        public void testGuestIsBan() {
-            //Guest is banned
-            assertThat(guest3.getisBannedFromPub()).isEqualTo(true);
+        public void testGuestIsNotBan() {
+            //Guest is not banned
+            assertThat(guest2.getisBannedFromPub()).isEqualTo(false);
 
         }
         @Test
-        public void testGuestIsNotBan () {
-            //Guest is not banned
-            assertThat(guest1.getisBannedFromPub()).isEqualTo(false);
+        public void testGuestIsBan () {
+            //Guest is banned
+            assertThat(guest1.getisBannedFromPub()).isEqualTo(true);
 
         }
 

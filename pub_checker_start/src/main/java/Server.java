@@ -17,8 +17,8 @@ public class Server {
 
     //Check if the guest is the legal age limit and is not drunk
     public boolean canServeGuest(Guest guest) {
-        if (guest.getAge() >= this.checkAge && guest.getSoberLvl() > 50
-                && guest.getWalletCurrency() == getPoundSign() && guest.getisBannedFromPub() ==true) {
+        if (guest.getAge() > this.checkAge && guest.getSoberLvl() > 50
+                && guest.getWalletCurrency() == getPoundSign() && guest.getisBannedFromPub() == false) {
             return true;
         }
         return false;

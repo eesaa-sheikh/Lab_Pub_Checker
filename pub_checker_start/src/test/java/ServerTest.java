@@ -14,6 +14,7 @@ public class ServerTest {
     private Guest guest2;
     private Guest guest3;
     private Guest guest4;
+    private Guest guest5;
     private Drink mountainDew;
     private Drink pepsi;
 
@@ -24,17 +25,18 @@ public class ServerTest {
         guest2 = new Guest("Mark", 0, 100, 100, '£', false);
         guest3 = new Guest("Sheikh", 100, 20, 50, '$', true);
         guest4 = new Guest("Tom", 1, 12, 1, '$', false);
-
+        guest5 = new Guest("Tom", 1, 1, 1, '$', false);
         mountainDew = new Drink("Mountain Dew", 5);
     }
 
     // TODO: test that guest can only get served if over 18
+
     @Test
-    //Test to see if the server can get served
-    public void ifGuestCannotBeServedOverall() {
-        //can is of the legal but is too drunk
+    //If all requirements are met  (expected true) this  ifGuestCanBeServedOverall is a quick way of getting
+    public void ifGuestCanBeServedOverall() {
         assertThat(server1.canServeGuest(guest1)).isEqualTo(false);
         assertThat(server1.canServeGuest(guest2)).isEqualTo(true);
+        assertThat(server1.canServeGuest(guest5)).isEqualTo(false);
     }
 
     @Test
