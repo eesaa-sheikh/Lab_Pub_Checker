@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/lab_pub_checker.iml" filepath="$PROJECT_DIR$/.idea/lab_pub_checker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pub_checker_start/tdd_start_code.iml" filepath="$PROJECT_DIR$/pub_checker_start/tdd_start_code.iml" />
+    </modules>
+  </component>
+</project>
